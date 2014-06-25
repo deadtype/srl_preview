@@ -1,0 +1,175 @@
+.close_news {
+	position: absolute;
+	top: .3em;
+	right: 0px;
+	width: 1.1em;
+}
+
+#button, #close {
+	cursor: pointer;
+}
+
+#button {
+		position: absolute;
+	top: 0;
+	right: 0;
+
+}
+
+.button_style {
+	padding: .25em .7em;
+/* background: #e6e6e6; */
+border: 2px solid #e6e6e6;
+border-radius:2px
+}
+
+#sidebar {
+-webkit-transform: translate3d(350px, 0, 0);
+-moz-transform: translate3d(350px, 0, 0);
+-ms-transform: translate3d(350px, 0, 0);
+-o-transform: translate3d(350px, 0, 0);
+transform: translate3d(350px, 0, 0);
+width: 300px;
+right:0;
+float: right;
+margin: 30px 0 25px 0;
+overflow: hidden;
+position: fixed;
+background: white;
+border-left: 1px solid lightgray;
+margin-top: 0;
+height: 100%;
+overflow-y: scroll;
+-webkit-overflow-scrolling: touch;
+-webkit-transition: all 0.3s ease-in-out;
+-webkit-transition-delay: 0;
+-moz-transition: all 0.3s ease-in-out 0;
+-o-transition: all 0.3s ease-in-out 0;
+transition: all 0.3s ease-in-out 0;
+z-index: 1000;
+
+	.block {
+		position: relative;
+		.header{
+			padding: 1.5em 1em 2em 1em;
+		}
+	}
+}
+
+#sidebar.show {
+-webkit-transform: translate3d(0, 0, 0);
+-moz-transform: translate3d(0, 0, 0);
+-ms-transform: translate3d(0, 0, 0);
+-o-transform: translate3d(0, 0, 0);
+transform: translate3d(0, 0, 0);
+-webkit-transition: all 0.3s ease-in-out;
+-webkit-transition-delay: 0;
+-moz-transition: all 0.3s ease-in-out 0;
+-o-transition: all 0.3s ease-in-out 0;
+transition: all 0.3s ease-in-out 0;
+right:0;
+}
+/*{
+
+width: 13.2em;
+border-left: 1px solid #d5d5d5;
+padding-left: 2em;
+overflow: auto;
+display: block;
+height: 100%;
+padding-bottom: 20em;
+position: fixed;
+top: 4px;
+bottom: 0;
+right: -15.45em;
+left: auto;
+z-index: 200;
+}*/
+#sidebar h3 {
+font-size: 16px;
+font-weight: bold;
+
+}
+#sidebar .block ul {
+/*border-bottom:1px solid #ccc;*/
+}
+#sidebar .block ul .children{
+border:0;
+padding: 0 0 0 8px;
+}
+#sidebar .block li {
+	padding: 0 1.5em;
+}
+#sidebar .block li:first-of-type a {
+border-top:none;
+margin-top: 3.7em;
+}
+#sidebar .block li a {
+/*background:transparent url(../images/bullet_black.gif) no-repeat scroll 6px 10px;*/
+font-size: 13px;
+font-weight: normal;
+padding: .95em 0px;
+display: block;
+border-bottom: none;
+line-height: 1.4;
+border-top:1px solid #ccc;
+
+}
+#sidebar .block li:first-of-type a {
+}
+#sidebar .block li a:hover {
+/*background:#f7f7f7 url(../images/bullet_yellow.png) no-repeat scroll 6px 10px;*/
+}
+#sidebar .widget_search label {
+display:block;
+padding:25px 0 3px 0;
+font-size:18px;
+border-bottom:1px solid #ccc;
+margin:0 0 5px;
+}
+#sidebar .widget_recent_comments li {
+background:transparent url(images/bullet_black.gif) no-repeat scroll 6px 52%;
+padding:2px 0 2px 15px;
+}
+#sidebar .widget_recent_comments li a,#sidebar .widget_recent_comments li a:hover{
+background:none;
+border-bottom:1px solid #000;
+text-decoration:none;
+color:#000;
+font-weight:600;
+}
+#sidebar .widget_recent_comments li a:hover {
+color:#e12000;
+border-bottom:1px dashed #e12000;
+background-color:#f7f7f7;
+}
+#sidebar .widget_tag_cloud h3 {
+margin:0 0 8px;
+border-bottom:1px solid #ccc;
+}
+#sidebar .widget_text h3 , #sidebar .calendar h3{
+border-bottom:1px solid #ccc;
+}
+#sidebar .calendar h3{
+display:none;
+}
+#sidebar #wp-calendar {
+width:95%;
+text-align:center;
+}
+#sidebar #wp-calendar caption, #sidebar #wp-calendar td, #sidebar #wp-calendar th{
+text-align:center;
+}
+#sidebar #wp-calendar caption {
+font-size:18px;
+padding:25px 0 3px 0;
+}
+#sidebar #wp-calendar th {
+font-weight: bold;
+border-top:1px solid #ccc;
+border-bottom:1px solid #ccc;
+}
+#sidebar #wp-calendar tfoot td{
+border-top:1px solid #ccc;
+border-bottom:1px solid #ccc;
+}
