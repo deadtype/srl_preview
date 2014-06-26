@@ -845,7 +845,7 @@ h2 sup {
   visibility: hidden; }
 
 .project {
-  margin-bottom: 3em; }
+  margin-bottom: 4em; }
 
 @media screen and (max-width: 600px) {
   #gridb[data-columns]::before {
