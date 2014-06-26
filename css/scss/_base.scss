@@ -58,8 +58,16 @@ a:hover {
 color:#000;
 
 }
-
-
+.lab_name {
+width: 24em;
+font-size: 1em;
+display: inline-block;
+font-weight: bold;
+a {
+	font-style: normal;
+}
+a:hover {color:#2a477c;}
+}
 hr{
 margin-top:35px;
 border:0;
@@ -108,17 +116,6 @@ width:100%;
 .srl {width: 11.5em; float: left; position: absolute;}
 .eth {width: 8em; float: right;}
 
-#logo a {
-color:#2a477c;
-font-size:52px;
-font-weight:600;
-text-decoration:none;
-border-bottom:none;
-letter-spacing:-4px;
-background-color:#fff;
-font-style:italic;
-background: transparent;
-}
 
 #logo h2 {
 font-size : 12px;
