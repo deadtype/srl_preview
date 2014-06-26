@@ -37,12 +37,19 @@ font-variant:normal;
 font-weight:normal;
 line-height:1.7em;
 }
+
+.max_width {
+	max-width: 1400px;
+	margin-left: auto;
+	margin-right: auto
+}
 img {
 	width: 100%;
 }
 select {
 	margin: 0;
 }
+
 a {
 text-decoration:none;
 color:#2a477c;
@@ -52,6 +59,7 @@ color:#000;
 
 }
 
+
 hr{
 margin-top:35px;
 border:0;
@@ -59,6 +67,7 @@ border-top:1px solid #ccc;
 color:#fff;
 clear:both;
 }
+
 #wrapper {
 margin:0;
 position: fixed;
@@ -68,33 +77,36 @@ height: 100%;
 overflow: hidden;
 overflow-y: scroll;
 -webkit-overflow-scrolling: touch;
-padding-bottom: 4em;
 }
-#header_wrapper{
 
+#header_wrapper{
+	background: #f7f7f7;
 margin:0px auto 0px;
+margin-bottom: 5em;
+
 }
+
 #header {
 	margin:0px auto;
 	position:relative;
-	padding:25px 2em 10px;
+	padding: 1.2em 2em .8em;
 }
 
 .header {
-	height: 5.8em;
 	border-bottom: 1px solid #eee;
-background: #f7f7f7;
 }
 
 .inner_header_container {
 	position: relative;
+		@extend .max_width;
+
 }
 
 #logo {
 width:100%;
 }
-.srl {width: 8.5em; float: left;}
-.eth {width: 10em; float: right;}
+.srl {width: 11.5em; float: left; position: absolute;}
+.eth {width: 8em; float: right;}
 
 #logo a {
 color:#2a477c;
@@ -105,8 +117,6 @@ border-bottom:none;
 letter-spacing:-4px;
 background-color:#fff;
 font-style:italic;
-/*background:transparent url("../images/logo-bg.png") no-repeat 0px 11px;
-padding-left:50px;*/
 background: transparent;
 }
 
@@ -122,6 +132,11 @@ text-transform:uppercase;
 #nav {
 margin: .7em 2em .8em;
 padding: 0;
+}
+
+#nav.nav_top {
+margin: 1.5em 0 .2em 0;
+float: right;
 }
 
 #nav ul {
@@ -155,13 +170,23 @@ min-height:420px;
 overflow:hidden;
 }
 
+.section {
+	margin-bottom: 4em;
+}
+.copy_block {
+	margin-bottom: 2em;
+}
+
 #content p {text-align:justify;}
 
 .post {
 padding:0;
 }
 .post p {
-margin:14px 0 14px 0;
+margin: 0;
+}
+.post p + p {
+margin-top: .5em;
 }
 .post em{
 font-style:italic;
@@ -177,7 +202,7 @@ margin:30px 0 10px 0;
 font-weight:normal;
 line-height:32px;
 }
-.post h3, .post h4 {
+.post h4 {
 font-size:16px;
 margin:15px 0 10px 0;
 font-weight:normal;
@@ -267,14 +292,15 @@ color:#fff;
 
 .button {display: inline-block;
 /* background: #333; */
-padding: .1em .85em 0px;
-margin: 10px 0px;
-color: #555;
+padding: .3em 1em .3em;
+margin-top: 1em;
+background: #333;
+color: white;
+border: none;
 font-weight:bold;
-border:2px solid #555;
 border-radius: 2px;
 font-size:.9em;}
-.button:hover  {background:#555;
+.button:hover  {background:black;
 color: white;}
 
 .pdf-load {

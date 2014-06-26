@@ -1,0 +1,17 @@
+p {margin: 0;}
+p + p { margin-top: 1em;}
+
+h3 {font-size: 18px;
+font-weight: bold;
+margin-bottom: 3em;}
+
+.date {
+	font-weight: bold;
+	color: #999;
+
+}
+
+.date::before {
+	content: '—';
+	margin: 0 .5em;
+}

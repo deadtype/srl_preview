@@ -24,72 +24,21 @@ border-radius:2px
 }
 
 #sidebar {
--webkit-transform: translate3d(350px, 0, 0);
--moz-transform: translate3d(350px, 0, 0);
--ms-transform: translate3d(350px, 0, 0);
--o-transform: translate3d(350px, 0, 0);
-transform: translate3d(350px, 0, 0);
-width: 300px;
-right:0;
-float: right;
-margin: 30px 0 25px 0;
-overflow: hidden;
-position: fixed;
+margin: 0 0 2em 0;
+
 background: white;
-border-left: 1px solid lightgray;
-margin-top: 0;
-height: 100%;
-overflow-y: scroll;
--webkit-overflow-scrolling: touch;
--webkit-transition: all 0.3s ease-in-out;
--webkit-transition-delay: 0;
--moz-transition: all 0.3s ease-in-out 0;
--o-transition: all 0.3s ease-in-out 0;
-transition: all 0.3s ease-in-out 0;
-z-index: 1000;
+
 
 	.block {
 		position: relative;
+		padding: 0 2em;
 		.header{
 			padding: 1.5em 1em 2em 1em;
 		}
 	}
 }
 
-#sidebar.show {
--webkit-transform: translate3d(0, 0, 0);
--moz-transform: translate3d(0, 0, 0);
--ms-transform: translate3d(0, 0, 0);
--o-transform: translate3d(0, 0, 0);
-transform: translate3d(0, 0, 0);
--webkit-transition: all 0.3s ease-in-out;
--webkit-transition-delay: 0;
--moz-transition: all 0.3s ease-in-out 0;
--o-transition: all 0.3s ease-in-out 0;
-transition: all 0.3s ease-in-out 0;
-right:0;
-}
-/*{
 
-width: 13.2em;
-border-left: 1px solid #d5d5d5;
-padding-left: 2em;
-overflow: auto;
-display: block;
-height: 100%;
-padding-bottom: 20em;
-position: fixed;
-top: 4px;
-bottom: 0;
-right: -15.45em;
-left: auto;
-z-index: 200;
-}*/
-#sidebar h3 {
-font-size: 16px;
-font-weight: bold;
-
-}
 #sidebar .block ul {
 /*border-bottom:1px solid #ccc;*/
 }
@@ -98,17 +47,17 @@ border:0;
 padding: 0 0 0 8px;
 }
 #sidebar .block li {
-	padding: 0 1.5em;
+	padding: 0;
 }
 #sidebar .block li:first-of-type a {
 border-top:none;
-margin-top: 3.7em;
+padding-top: 0;
 }
 #sidebar .block li a {
 /*background:transparent url(../images/bullet_black.gif) no-repeat scroll 6px 10px;*/
 font-size: 13px;
 font-weight: normal;
-padding: .95em 0px;
+padding: 1.2em 0px;
 display: block;
 border-bottom: none;
 line-height: 1.4;
@@ -172,4 +121,14 @@ border-bottom:1px solid #ccc;
 #sidebar #wp-calendar tfoot td{
 border-top:1px solid #ccc;
 border-bottom:1px solid #ccc;
+}
+
+@media only screen and (min-width: 40em) {
+
+#sidebar {
+	.block {
+		padding: 0 1.5em;
+	}
+}
+
 }
